@@ -12,17 +12,34 @@ const icons = {
 export default function ProjectCard({ project }){
     const { name, description, image, stack, repository, web } = project;
 
-    return <article className="overflow-hidden rounded-lg border-2 border-gray-800 group">
-        <div className="aspect-video border-b-2 border-gray-800 overflow-hidden relative">
-            <ProjectCardLink repository={repository} web={web} />
-            <img src={image} alt={`Project preview: ${name}`} className="object-cover w-full h-full group-hover:scale-105 group-hover:brightness-90 transition-all" />
+    return <article className="
+        overflow-hidden rounded-lg group
+        sm:border-2 sm:border-gray-800
+    ">
+        <div className="
+            aspect-video overflow-hidden relative mb-4 border-2 border-gray-800 rounded-lg
+            sm:border-b-2 sm:border-gray-800 sm:mb-0 sm:rounded-none sm:border-0
+        ">
+            <ProjectCardLinks repository={repository} web={web} />
+            <img src={image} alt={`Project preview: ${name}`} className="
+                object-cover w-full h-full group-hover:scale-105 group-hover:brightness-90 transition-all
+            "/>
         </div>
-        <div className="p-6 group-hover:brightness-90 transition-all">
+        <div className="
+            group-hover:brightness-90 transition-all
+            sm:p-6
+        ">
             <ul className="flex flex-wrap gap-2 mb-2">
                 {stack.map((tech, index)=> <StackElement name={tech} key={index} />)}
             </ul>
-            <h3 className="text-white font-semibold text-2xl">{name}</h3>
-            <p className="text-gray-300 text-lg" >{description}</p>
+            <h3 className="
+                text-white font-semibold text-xl
+                sm:text-2xl
+            ">{name}</h3>
+            <p className="
+                text-gray-300 text-base
+                sm:text-lg
+            ">{description}</p>
         </div>
     </article>;
 }
@@ -30,19 +47,34 @@ export default function ProjectCard({ project }){
 function StackElement({ name }){
     const SVG = icons[name];
 
-    return <li className="bg-slate-700 text-white font-semibold px-2 rounded-full flex gap-1 items-center">
+    return <li className="
+        bg-slate-700 text-white font-semibold px-2 rounded-full flex gap-1 items-center text-sm
+        sm:text-base
+    ">
         {SVG && <SVG />}
         {name}
     </li>;
 }
 
-function ProjectCardLink({repository, web}){
+function ProjectCardLinks({repository, web}){
     return <div className="absolute right-4 top-4 z-10 flex gap-4">
-        <a href={web} target="_blank" className="hover:bg-slate-700 transition-colors bg-slate-800 p-2 rounded-lg border-1 border-slate-600">
-            <Link className="" width="32px" height="32px" />
+        <a href={web} target="_blank" className="
+            hover:bg-slate-700 transition-colors bg-slate-800 p-1 rounded-lg border-1 border-slate-600
+            sm:p-2
+        ">
+            <Link className="
+                w-6 h-6
+                sm:w-8 sm:h-8
+            "/>
         </a>
-        <a href={repository} target="_blank" className="hover:bg-slate-700 transition-colors bg-slate-800 p-2 rounded-lg border-1 border-slate-600">
-            <GitHub className="" width="32px" height="32px" />
+        <a href={repository} target="_blank" className="
+            hover:bg-slate-700 transition-colors bg-slate-800 p-1 rounded-lg border-1 border-slate-600
+            sm:p-2
+        ">
+            <GitHub className="
+                w-6 h-6
+                sm:w-8 sm:h-8
+            "/>
         </a>
     </div>;
 }

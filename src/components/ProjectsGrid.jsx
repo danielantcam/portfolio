@@ -12,12 +12,19 @@ const projects = [
 ];
 
 export default function ProyectsGrid(){
-    return <section id="projects" className="mb-10">
-      <h2 className="text-white font-semibold text-5xl mb-8">
+    return <section id="projects" className="
+      mb-10
+      md:mb-20
+    ">
+      <h2 className="
+        text-white font-semibold text-3xl mb-8
+          lg:text-5xl
+      ">
         My projects
       </h2>
       <div className="
-        w-full grid grid-cols-2 gap-10
+        w-full grid grid-cols-1 gap-10
+        lg:grid-cols-2
         3xl:grid-cols-3
       ">
         {projects.map((project, index) => <ProjectCard project={project} key={index} />)}
