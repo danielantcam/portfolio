@@ -18,10 +18,10 @@ export default function Stack() {
         flex flex-col mb-10
         md:mb-20
     ">
-        <h2 className="
+        <h3 className="
             text-white font-semibold text-3xl mb-8
             lg:text-5xl
-        ">Stack</h2>
+        ">Stack</h3>
         <div className="w-full grow flex justify-between items-center">
             <ul className="
                 w-full grid gap-y-4 grid-cols-3

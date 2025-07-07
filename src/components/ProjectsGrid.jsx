@@ -16,12 +16,12 @@ export default function ProyectsGrid(){
       mb-10
       md:mb-20
     ">
-      <h2 className="
+      <h3 className="
         text-white font-semibold text-3xl mb-8
-          lg:text-5xl
+        lg:text-5xl
       ">
         My projects
-      </h2>
+      </h3>
       <div className="
         w-full grid grid-cols-1 gap-10
         lg:grid-cols-2

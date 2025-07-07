@@ -6,13 +6,11 @@ return <header className="
     ">
         <header className="w-full h-20 flex items-end">
             <div className="w-full flex justify-between items-center">
-                <a href="/">
-                    <h1 className="
-                        text-white font-semibold text-xl
-                        sm:text-3xl
-                    ">
-                        danielantcam<span className="text-blue-500">.dev</span>
-                    </h1>
+                <a href="/" className="
+                    text-white font-semibold text-xl
+                    sm:text-3xl"
+                >
+                    danielantcam<span className="text-blue-500">.dev</span>
                 </a>
                 <a href="https://github.com/danielantcam" target="_blank" rel="noreferrer" className="hover:opacity-70">
                     <GitHub width="3em" height="3em" className="p-2"/>
@@ -21,12 +19,12 @@ return <header className="
         </header>
     
         <div className="w-full grow flex flex-col justify-center">
-            <p className="
+            <h1 className="
                 text-white font-semibold text-4xl mb-2
                 lg:text-6xl
                 xl:text-7xl
 
-            ">Hi, I'm Daniel Antón.</p>
+            ">Hi, I'm Daniel Antón.</h1>
             <h2 className="
                 text-blue-500 font-semibold text-3xl mb-6
                 lg:text-4xl

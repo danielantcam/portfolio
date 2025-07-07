@@ -32,10 +32,10 @@ export default function ProjectCard({ project }){
             <ul className="flex flex-wrap gap-2 mb-2">
                 {stack.map((tech, index)=> <StackElement name={tech} key={index} />)}
             </ul>
-            <h3 className="
+            <h4 className="
                 text-white font-semibold text-xl
                 sm:text-2xl
-            ">{name}</h3>
+            ">{name}</h4>
             <p className="
                 text-gray-300 text-base
                 sm:text-lg
