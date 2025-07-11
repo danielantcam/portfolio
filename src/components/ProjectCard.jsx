@@ -51,27 +51,27 @@ function StackElement({ name }){
         bg-slate-700 text-white font-semibold px-2 rounded-full flex gap-1 items-center text-sm
         sm:text-base
     ">
-        {SVG && <SVG />}
+        {SVG && <SVG aria-hidden="true" />}
         {name}
     </li>;
 }
 
 function ProjectCardLinks({repository, web}){
     return <div className="absolute right-4 top-4 z-10 flex gap-4">
-        <a href={web} target="_blank" className="
+        <a href={web} target="_blank" rel="noreferrer" aria-label="Visit" className="
             hover:bg-slate-700 transition-colors bg-slate-800 p-1 rounded-lg border-1 border-slate-600
             sm:p-2
         ">
-            <Link className="
+            <Link aria-hidden="true" className="
                 w-6 h-6
                 sm:w-8 sm:h-8
             "/>
         </a>
-        <a href={repository} target="_blank" className="
+        <a href={repository} target="_blank" rel="noreferrer" aria-label="GitHub repository" className="
             hover:bg-slate-700 transition-colors bg-slate-800 p-1 rounded-lg border-1 border-slate-600
             sm:p-2
         ">
-            <GitHub className="
+            <GitHub aria-hidden="true" className="
                 w-6 h-6
                 sm:w-8 sm:h-8
             "/>

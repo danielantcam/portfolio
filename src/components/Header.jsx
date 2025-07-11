@@ -12,8 +12,8 @@ return <header className="
                 >
                     danielantcam<span className="text-blue-500">.dev</span>
                 </a>
-                <a href="https://github.com/danielantcam" target="_blank" rel="noreferrer" className="hover:opacity-70">
-                    <GitHub width="3em" height="3em" className="p-2"/>
+                <a href="https://github.com/danielantcam" target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:opacity-70">
+                    <GitHub width="3em" height="3em" aria-hidden="true" className="p-2"/>
                 </a>
             </div>
         </header>
@@ -40,7 +40,7 @@ return <header className="
                 <a href="https://github.com/danielantcam" target="_blank" rel="noreferrer" className="
                     cursor-pointer bg-slate-800 rounded-sm px-6 py-2 text-lg text-white font-semibold hover:bg-slate-700 transition-colors flex items-center gap-2 justify-center
                 ">
-                    <GitHub/>
+                    <GitHub aria-hidden="true" />
                     Visit GitHub
                 </a>
             </div>

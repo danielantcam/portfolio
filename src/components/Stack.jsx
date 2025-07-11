@@ -31,8 +31,8 @@ export default function Stack() {
                 {stack.map((tech, index)=>{
                     const Icon = icons[tech];
 
-                    return <li className="flex flex-col items-center">
-                        <Icon key={index} className="
+                    return <li key={index} className="flex flex-col items-center">
+                        <Icon aria-hidden="true" className="
                             mb-2 w-15 h-15
                             lg:mb-4
                         " />

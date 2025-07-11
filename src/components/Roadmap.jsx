@@ -1,5 +1,5 @@
 export default function Roadmap({ events }){
-    return <article role="list">
+    return <article>
         <h3 className="
             text-white font-semibold text-3xl mb-8
             lg:text-5xl
@@ -13,7 +13,7 @@ export default function Roadmap({ events }){
 function  RoadmapBlock({ event }){
     const { title, description, date } = event;
 
-    return <section role="listitem" className="flex mb-2">
+    return <section className="flex mb-2">
         <div aria-hidden="true" className="flex flex-col items-center mr-6">
             <div className="w-6 h-6 bg-blue-500 rounded-full mb-1"></div>
             <div className=" grow w-2 bg-blue-500 rounded-sm"></div>
@@ -28,7 +28,7 @@ function  RoadmapBlock({ event }){
                     sm:text-xl
                 ">{title}</h4>
                 <span className="
-                    text-gray-500 font-semibold text-xs
+                    text-gray-400 font-semibold text-xs
                     sm:text-base
                 ">{date}</span>
             </div>

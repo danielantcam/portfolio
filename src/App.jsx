@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Stack from "./components/Stack";
 import ProjectsGrid from "./components/ProjectsGrid";
-import Roadmap from "./components/RoadmapBlock";
+import Roadmap from "./components/Roadmap";
 import Footer from "./components/Footer";
 
 export default function App() {
