@@ -1,4 +1,4 @@
-import { GitHub } from "./Svg";
+import { GitHub, LinkedIn } from "./Svg";
 
 export default function Header(){
 return <header className="
@@ -12,9 +12,18 @@ return <header className="
                 >
                     danielantcam<span className="text-blue-500">.dev</span>
                 </a>
-                <a href="https://github.com/danielantcam" target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:opacity-70">
-                    <GitHub width="3em" height="3em" aria-hidden="true" className="p-2"/>
-                </a>
+
+                <div className="
+                    flex
+                    sm:gap-2
+                ">
+                    <a href="https://linkedin.com/in/danielantcam" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:opacity-70">
+                        <LinkedIn aria-hidden="true" className="w-10 h-10 p-2 sm:w-12 sm:h-12"/>
+                    </a>
+                    <a href="https://github.com/danielantcam" target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:opacity-70">
+                        <GitHub aria-hidden="true" className="w-10 h-10 p-2 sm:w-12 sm:h-12" />
+                    </a>
+                </div>
             </div>
         </header>
     
