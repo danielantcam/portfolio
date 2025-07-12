@@ -13,7 +13,8 @@ export default function App() {
       {
         title: "React Tutorial",
         description: "Completed 'React Tutorial' by Jad Joubran, an interactive course that introduces React fundamentals through hands-on coding challenges and real-world projects, ideal for building a solid foundation in modern front-end development.",
-        date: "June 2025"
+        date: "June 2025",
+        certificate: "https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--P_qdHUr2--/v1749661130/certificates/react/danielantncamarero-9466.pdf"
       },
       {
         title: "Computer Science",
@@ -23,7 +24,8 @@ export default function App() {
       {
         title: "Learn JavaScript",
         description: "Took 'Learn JavaScript' by Jad Joubran, a complete course on JavaScript that covers all the way from the basics to more advanced concepts that are reinforced through real-life projects.",
-        date: "May 2024"
+        date: "May 2024",
+        certificate: "https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--6EiAUpUa--/v1750516212/certificates/javascript/danielantncamarero-4575.pdf"
       }
     ]} />
     <Footer />
