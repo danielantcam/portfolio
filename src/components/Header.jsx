@@ -1,10 +1,10 @@
 import { GitHub, LinkedIn } from "./Svg";
 
 export default function Header(){
-return <header className="
+return <header role="banner" className="
         w-full min-h-fit flex flex-col justify-around items-start relative h-120
     ">
-        <header className="w-full h-20 flex items-end">
+        <nav className="w-full h-20 flex items-end">
             <div className="w-full flex justify-between items-center">
                 <a href="/" className="
                     text-white font-semibold text-xl
@@ -25,7 +25,7 @@ return <header className="
                     </a>
                 </div>
             </div>
-        </header>
+        </nav>
     
         <div className="w-full grow flex flex-col justify-center">
             <h1 className="

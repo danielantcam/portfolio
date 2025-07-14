@@ -1,10 +1,13 @@
 import { ViewCertificate } from "./Svg";
 
 export default function Roadmap({ events }){
-    return <article>
+    return <article className="
+        w-full
+        xl:w-3/5
+    ">
         <h3 className="
-            text-white font-semibold text-3xl mb-8
-            lg:text-5xl
+            text-white font-semibold text-3xl mb-4
+            lg:text-5xl md:mb-8
         ">
             Academic Roadmap
         </h3>
@@ -17,7 +20,7 @@ export default function Roadmap({ events }){
 function  RoadmapBlock({ event }){
     const { title, description, date, certificate } = event;
 
-    return <li className="flex mb-2">
+    return <li className="flex mb-1">
         <div aria-hidden="true" className="flex flex-col items-center mr-6">
             <div className="w-6 h-6 bg-blue-500 rounded-full mb-1"></div>
             <div className=" grow w-2 bg-blue-500 rounded-sm"></div>
@@ -51,7 +54,7 @@ function  RoadmapBlock({ event }){
                 </span>
             </div>
             <p className="
-                text-gray-400 font-semibold pb-4 text-sm
+                text-gray-400 pb-4 text-sm
                 sm:text-base
             ">{description}</p>
         </div>

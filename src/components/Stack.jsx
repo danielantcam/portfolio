@@ -14,13 +14,13 @@ const icons = {
 
 export default function Stack() {
 
-    return <section className="
+    return <article className="
         flex flex-col mb-10
         md:mb-20
     ">
         <h3 className="
-            text-white font-semibold text-3xl mb-8
-            lg:text-5xl
+            text-white font-semibold text-3xl mb-4
+            lg:text-5xl md:mb-8
         ">Stack</h3>
         <div className="w-full grow flex justify-between items-center">
             <ul className="
@@ -44,5 +44,5 @@ export default function Stack() {
                 })}
             </ul>
         </div>
-    </section>;
+    </article>;
 }

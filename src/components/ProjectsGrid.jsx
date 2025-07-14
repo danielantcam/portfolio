@@ -17,8 +17,8 @@ export default function ProyectsGrid(){
       md:mb-20
     ">
       <h3 className="
-        text-white font-semibold text-3xl mb-8
-        lg:text-5xl
+        text-white font-semibold text-3xl mb-4
+        lg:text-5xl md:mb-8
       ">
         My projects
       </h3>
