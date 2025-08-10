@@ -1,6 +1,6 @@
-import { HTML5, CSS, React, TailwindCSS, Nodejs, Expressjs, MySQL, JavaScript } from "./Svg";
+import { HTML5, CSS, React, TailwindCSS, Nodejs, Expressjs, PostgreSQL, JavaScript, Nextjs } from "./Svg";
 
-const stack = [ "HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express", "MySQL" ];
+const stack = [ "HTML", "CSS", "JavaScript", "React", "NextJS", "TailwindCSS", "Node.js", "Express", "PostgreSQL" ];
 const icons = {
     "HTML": HTML5,
     "CSS": CSS,
@@ -9,7 +9,8 @@ const icons = {
     "TailwindCSS": TailwindCSS,
     "Node.js": Nodejs,
     "Express": Expressjs,
-    "MySQL": MySQL,
+    "PostgreSQL": PostgreSQL,
+    "NextJS": Nextjs
 }
 
 export default function Stack() {

@@ -2,6 +2,14 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    name: "LinkHUB",
+    description: "Simple and functional Link-Tree-like app. Fullstack project developed with Next.js, TailwindCSS, PostgreSQL.",
+    image: "/linkhub.webp",
+    stack: ["JavaScript", "NextJS", "React", "TailwindCSS", "PostgreSQL"],
+    repository: "https://github.com/danielantcam/linkhub",
+    web: "https://linkhub.danielantcam.dev"
+  },
+  {
     name: "Simple URL shortener",
     description: "Simple URL shortener. Fullstack project developed with React, Tailwindcss, Node.js, Express and MySQL.",
     image: "/url-shortener.webp",

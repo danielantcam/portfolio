@@ -1,4 +1,4 @@
-import { Link, GitHub, React, TailwindCSS, Nodejs, Expressjs, MySQL, JavaScript } from "./Svg";
+import { Link, GitHub, React, TailwindCSS, Nodejs, Expressjs, MySQL, JavaScript, Nextjs, PostgreSQL } from "./Svg";
 
 const icons = {
     "React": React,
@@ -6,7 +6,9 @@ const icons = {
     "Node.js": Nodejs,
     "Express": Expressjs,
     "MySQL": MySQL,
-    "JavaScript": JavaScript
+    "JavaScript": JavaScript,
+    "NextJS": Nextjs,
+    "PostgreSQL": PostgreSQL
 }
 
 export default function ProjectCard({ project }){
